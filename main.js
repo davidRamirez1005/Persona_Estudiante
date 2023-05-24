@@ -13,7 +13,7 @@ class Persona{
     _sexo
     constructor({nombre="",edad="",sexo=""}){
         this._nombre = nombre
-        this._edad = sexo
+        this._edad = edad
         this.Sexo = sexo
     }
     get nombre(){
@@ -46,8 +46,8 @@ persona1.saludar()
 
 class Estudiante extends Persona {
     _carrera
-    constructor({ nombre = "", carrera = "" }){
-        super({ nombre })
+    constructor({ nombre = "",edad="",sexo="", carrera = "" }){
+        super({ nombre,edad,sexo })
         this._carrera = carrera
     }
     get carrera(){
@@ -60,7 +60,7 @@ class Estudiante extends Persona {
         console.log(`Yo ${this.nombre}, estoy estudiando: ${this.carrera}`)
     }
 }
-const estudiante1 = new Estudiante({nombre:'Jose David',carrera:"Desarrollo web"});
+const estudiante1 = new Estudiante({nombre:'Juan Diego',edad: 18,sexo: "Masculino",carrera:"Desarrollo web"});
 console.log("-----------------------------------------------");
 console.log(estudiante1.carrera); 
 estudiante1.saludar()
