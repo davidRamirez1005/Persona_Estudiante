@@ -16,6 +16,21 @@ class Persona{
         this._edad = sexo
         this.Sexo = sexo
     }
+    get nombre(){
+        return this._nombre
+    }
+    set nombre(nuevoNombre){
+        this._nombre = nuevoNombre
+    }
+    get edad(){
+        return this._edad
+    }
+    set edad(nuevoEdad){
+        this._edad = nuevoEdad
+    }
+    get sexo(){
+        return this._sexo
+    }
 }
 
 
