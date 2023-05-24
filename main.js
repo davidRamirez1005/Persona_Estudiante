@@ -14,7 +14,7 @@ class Persona{
     constructor({nombre="",edad="",sexo=""}){
         this._nombre = nombre
         this._edad = edad
-        this.Sexo = sexo
+        this._sexo = sexo
     }
     get nombre(){
         return this._nombre
@@ -58,13 +58,27 @@ class Estudiante extends Persona {
     }
     estudiar(){
         console.log(`Yo ${this.nombre}, estoy estudiando: ${this.carrera}`)
+        return `Yo ${this.nombre}, estoy estudiando: ${this.carrera}`
     }
 }
 const estudiante1 = new Estudiante({nombre:'Juan Diego',edad: 18,sexo: "Masculino",carrera:"Desarrollo web"});
 console.log("-----------------------------------------------");
 console.log(estudiante1.carrera); 
-estudiante1.saludar()
 estudiante1.estudiar()
 console.log(estudiante1);
 console.log("++++++++++++++++++++++++++++++++++++++++++++++++");
 console.log(Persona.esMayorEdad(persona1.edad));
+
+document.addEventListener("click",(e)=>{
+    
+    if(e.target.id == "continuarPersona"){
+        e.preventDefault()
+    e.stopPropagation()
+    let nombrePersona = document.getElementById("nombrePerson").value
+    let edadPersona = document.getElementById("edadPerson").value
+    let sexoPersona = document.getElementById("sexoPerson").value
+    let a = estudiante1.saludar() 
+    document.getElementById("saludito").innerHTML=a ;
+    }
+
+})
