@@ -8,6 +8,14 @@ class Persona{
 
         }
     }
+    _nombre
+    _edad
+    _sexo
+    constructor({nombre="",edad="",sexo=""}){
+        this._nombre = nombre
+        this._edad = sexo
+        this.Sexo = sexo
+    }
 }
 
 
