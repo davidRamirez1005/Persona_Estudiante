@@ -100,7 +100,7 @@ document.addEventListener("click",(e)=>{
         document.getElementById("colorRec").innerHTML = ("Color: " + rectangulo.color)
         document.getElementById("baseRec").innerHTML = ("Base: " + rectangulo.base)
         document.getElementById("radioRec").innerHTML = ("Altura: " + rectangulo.altura)
-        document.getElementById("area").innerHTML = ("Área: " + rectangulo.calcularArea())
+        document.getElementById("areaRec").innerHTML = ("Área: " + rectangulo.calcularArea())
     }
 
 })
