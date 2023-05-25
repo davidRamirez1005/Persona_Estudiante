@@ -17,9 +17,66 @@
 <body>
   <header>
     <!-- place navbar here -->
+    <h1>Segundo ejercicio del taller</h1>
   </header>
   <main>
-
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-3">
+            <h2>Animal</h2>
+          </div>
+          <div class="col-9">
+            <h2>Formulario Animal</h2>
+            <br>
+            <div class="inputs">
+              <input type="text" placeholder="Nombre" id="nombre">
+              <input type="text" placeholder="edad" id="edad">
+              <input type="text" placeholder="sonido" id="sonido">
+            </div>
+            <div class="boton">
+              <button type="button" id="continuarAnimal">Continuar</button>
+            </div>
+            <br><br>
+            <h2>Formulario Perro</h2>
+            <br>
+            <div class="inputs">
+              <input type="text" placeholder="raza" id="raza">
+            </div>
+          </div>
+        </div>
+        <div class="boton">
+          <button type="button" id="continuarPerro">Continuar Perro</button>
+        </div>
+      </form>
+      <div class="contenido">
+        <div class="row">
+          <h2>Animal</h2>
+          <div class="col-5">
+            <h3> Sonido del Animal</h3>
+          </div>
+          <div class="col-5">
+            <h2>nombre del animal: <span id="nameAnimal"></span></h2>
+            <br>
+            <h2>edad del animal: <span id="ageAnimal"></span></h2>
+            <br>
+            <h2>sonido del animal: <span id="soundAnimal"></span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <h2>moverCola</h2>
+          <div class="col-10">
+            <h2>nombre del perro: <span id="namePerro"></span></h2>
+            <br>
+            <h2>edad del perro: <span id="agePerro"></span></h2>
+            <br>
+            <h2>raza del perro: <span id="racePerro"></span></h2>
+            <br>
+            <h2><span id="instancia"></span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <!-- place footer here -->
