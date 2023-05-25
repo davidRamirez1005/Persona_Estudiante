@@ -1,7 +1,5 @@
 # Persona_Estudiante
 
-
-Ejercicio #1
 Ingrese en los inputs de persona el nombre, edad y sexo de la Persona 
 luego saldrá el saludo de aquella persona y va a mostrar en consola si es mayor o menor de edad.
 
@@ -10,7 +8,4 @@ Ingrese en los inputs del estudiante el nombre,edad,sexo y carreara que esta est
 elaborado con html,css,javascript
 
 se usó programacion orientada a objetos 
-
-
-Ejercico #2
 
