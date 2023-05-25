@@ -62,6 +62,7 @@ class Rectangulo extends Figura {
         return this._base * this._altura;
     }
 }
+
 document.addEventListener("click",(e)=>{
     if(e.target.id == "continuarCirculo"){
         e.preventDefault()
