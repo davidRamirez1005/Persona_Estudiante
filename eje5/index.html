@@ -21,7 +21,64 @@
     <h1>Quinto ejercicio del taller</h1>
   </header>
   <main>
-    
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-3">
+            <h2>Sputnik :)</h2>
+          </div>
+          <div class="col-9">
+            <h2>Formulario Empleado</h2>
+            <br>
+            <div class="inputs">
+              <input type="text" placeholder="nombre Empleado" id="nombreEmpleado">
+              <input type="text" placeholder="edad Empleado" id="edadEmpleado">
+              <input type="text" placeholder="sueldo Empleado" id="sueldoEmpleado">
+            </div>
+            <div class="boton">
+              <button type="button" id="continuarEmpleado">Continuar</button>
+            </div>
+            <br><br>
+            <h2>Formulario Gerente</h2>
+            <br>
+            <div class="inputs">
+              <input type="text" placeholder="nombre Gerente" id="nombreGerente">
+              <input type="text" placeholder="edad Gerente" id="edadGerente">
+              <input type="text" placeholder="sueldo Gerente" id="sueldoGerente">
+              <input type="text" placeholder="departamento Gerente" id="departamentoGerente">
+            </div>
+          </div>
+        </div>
+        <div class="boton">
+          <button type="button" id="continuarGerente">Continuar</button>
+        </div>
+      </form>
+      <div class="contenido">
+        <div class="row">
+          <h2>Empleado</h2>
+          <div class="col-10">
+            <br><br>
+            <h2>nombre del empleado: <span id="nameEmpleado"></span></h2>
+            <h2>edad del empleado: <span id="ageEmpleado"></span></h2>
+            <h2>sueldo del empleado: <span id="moneyEmpleado"></span></h2>
+            <h2>El salario anual del empleado es de: <span id="salarioEmpleado"></span></h2>
+            <br><br>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <h2>Gerente</h2>
+          <div class="col-5">
+            <h2>nombre del gerente: <span id="nameGerente"></span></h2>
+            <h2>edad del gerente: <span id="edadGerente"></span></h2>
+            <h2>sueldo del gerente: <span id="moneyGerente"></span></h2>
+            <h2>departamento del gerente: <span id="depaGerente"></span></h2>
+            <h2>El salario anual del gerente es de: <span id="salarioGerente"></span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
   </main>
   <footer>
     <!-- place footer here -->

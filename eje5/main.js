@@ -1,4 +1,7 @@
 class Empleado{
+    static generarIdEmpleado(){
+        incremento++
+    }
     _nombre
     _edad
     _sueldo
@@ -29,11 +32,6 @@ class Empleado{
         return sueldo * 12
     }
 }
-let empleado1 = new Empleado({nombre:"jose",edad:"19",sueldo:"60000000"})
-console.log('====================================');
-console.log(empleado1);
-console.log('====================================');
-console.log(empleado1.calcularSalarioAnual(empleado1.getSueldo));
 
 class Gerente extends Empleado{
     _departamento
@@ -51,9 +49,45 @@ class Gerente extends Empleado{
         return (parseFloat(salario) + 0.10) * (parseFloat(salario) * 12)
     }
 }
+document.addEventListener("click",(e)=>{
+    
+    if(e.target.id == "continuarEmpleado"){
+        e.preventDefault()
+        e.stopPropagation()
+        let nombreEmpleado = document.getElementById("nombreEmpleado").value
+        let edadEmpleado = document.getElementById("edadEmpleado").value
+        let sueldoEmpleado = document.getElementById("sueldoEmpleado").value
 
-let gerente1 = new Gerente({nombre:"",edad:"",sueldo:"340000",departamento:""})
-console.log('====================================');
-console.log(gerente1.calcularSalarioAnual(gerente1.getSueldo));
-console.log('====================================');
-console.log(gerente1);
+        let empleado1 = new Empleado({nombre:nombreEmpleado,edad:edadEmpleado,sueldo:sueldoEmpleado})
+        console.log('====================================');
+        console.log(empleado1);
+        document.getElementById("nameEmpleado").innerHTML=empleado1.getNombre
+        document.getElementById("ageEmpleado").innerHTML=empleado1.getEdad
+        document.getElementById("moneyEmpleado").innerHTML=empleado1.getSueldo
+        console.log('====================================');
+        console.log(empleado1.calcularSalarioAnual(empleado1.getSueldo));
+        document.getElementById("salarioEmpleado").innerHTML=empleado1.calcularSalarioAnual(empleado1.getSueldo)
+    }
+})
+
+document.addEventListener("click",(e)=>{
+    
+    if(e.target.id == "continuarGerente"){
+        e.preventDefault()
+        e.stopPropagation()
+        let nombreGerente = document.getElementById("nombreGerente").value
+        let edadGerente = document.getElementById("edadGerente").value
+        let sueldoGerente = document.getElementById("sueldoGerente").value
+        let departamentoGerente = document.getElementById("departamentoGerente").value
+        let gerente1 = new Gerente({nombre:nombreGerente,edad:edadGerente,sueldo:sueldoGerente,departamento:departamentoGerente})
+        console.log('====================================');
+        console.log(gerente1.calcularSalarioAnual(gerente1.getSueldo));
+        console.log('====================================');
+        console.log(gerente1);
+        document.getElementById("nameGerente").innerHTML=gerente1.getNombre
+        document.getElementById("edadGerente").innerHTML=gerente1.getEdad
+        document.getElementById("moneyGerente").innerHTML=gerente1.getSueldo
+        document.getElementById("depaGerente").innerHTML=gerente1.getDepartamento
+        document.getElementById("salarioGerente").innerHTML=gerente1.calcularSalarioAnual(gerente1.getSueldo)
+    }
+})
