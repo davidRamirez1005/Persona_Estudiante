@@ -10,18 +10,26 @@ header{
     margin-bottom: 7vh;
     transform: translatey(-123px);
 }
-body::-webkit-scrollbar{
+main::-webkit-scrollbar{
     width: 10px;
 }
-body::-webkit-scrollbar-thumb{
-    background-color: #757575;
+main::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.514);
     border-radius: 100px;
 }
-body::-webkit-scrollbar-button{
-    background-color: #000000;
+main::-webkit-scrollbar-button{
+    background-color: transparent;
 }
-body::-webkit-scrollbar-track-piece{
-    background-color: white;
+main::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+main{
+    height: 80vh;
+    background-color: transparent;
+    overflow-y:scroll;
+}
+body{
+    overflow-y:hidden ;
 }
 h1{
     color: cadetblue;
