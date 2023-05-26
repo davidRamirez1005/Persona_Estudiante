@@ -8,6 +8,7 @@ header{
     justify-content: center;
     margin-top: 5vh;
     margin-bottom: 7vh;
+    transform: translatey(-123px);
 }
 body::-webkit-scrollbar{
     width: 10px;
@@ -24,6 +25,9 @@ body::-webkit-scrollbar-track-piece{
 }
 h1{
     color: cadetblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
 }
 .inputs{
     display: flex;
@@ -74,4 +78,7 @@ button:hover {
 }
 span{
     color: rgb(23, 240, 175);
+}
+.efectOpacity {
+    opacity: 0;
 }

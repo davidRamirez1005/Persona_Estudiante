@@ -1,7 +1,5 @@
 class Empleado{
-    static generarIdEmpleado(){
-        incremento++
-    }
+    static generarIdEmpleado = 0;
     _nombre
     _edad
     _sueldo
@@ -9,6 +7,7 @@ class Empleado{
         this._nombre = nombre
         this._edad = edad
         this._sueldo = sueldo
+        Empleado.generarIdEmpleado++;
     }
     get getNombre() {
         return this._nombre
@@ -67,6 +66,7 @@ document.addEventListener("click",(e)=>{
         console.log('====================================');
         console.log(empleado1.calcularSalarioAnual(empleado1.getSueldo));
         document.getElementById("salarioEmpleado").innerHTML=empleado1.calcularSalarioAnual(empleado1.getSueldo)
+        document.getElementById("incremento").innerHTML = Empleado.generarIdEmpleado
     }
 })
 
