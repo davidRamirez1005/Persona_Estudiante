@@ -8,7 +8,7 @@ header{
     justify-content: center;
     margin-top: 5vh;
     margin-bottom: 7vh;
-    width: 40%;
+    width: 50%;
     transform: translatey(-123px);
 }
 main::-webkit-scrollbar{
@@ -97,10 +97,11 @@ strong span{
 .navbar {
 background-color: #e1f4ff;
 padding: 5%;
-width: 400%;
+width: 50%;
 display: flex;
 flex-wrap: wrap;
-border-radius: 15px
+border-radius: 15px;
+margin: auto;
 }
 
 .navbar-brand {
