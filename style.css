@@ -87,3 +87,9 @@ button:hover {
 .efectOpacity {
     opacity: 0;
 }
+span{
+    color: rgb(23, 240, 175);
+}
+strong span{
+    color: cornflowerblue !important;
+}
