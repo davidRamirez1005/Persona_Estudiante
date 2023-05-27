@@ -51,11 +51,11 @@ class Navbar extends HTMLElement {
   
         <div class="navbar">
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="./index.html">EJERCICIO 1</a></li>
-            <li class="nav-item"><a href="./eje2/index.html">EJERCICIO 2</a></li>
-            <li class="nav-item"><a href="./eje3/index.html">EJERCICIO 3</a></li>
-            <li class="nav-item"><a href="./eje4/index.html">EJERCICIO 4</a></li>
-            <li class="nav-item"><a href="./eje5/index.html">EJERCICIO 5</a></li>
+            <li class="nav-item"><a href="../Persona_Estudiante/index.html">EJERCICIO 1</a></li>
+            <li class="nav-item"><a href="../Persona_Estudiante/eje2/index.html</a></li>
+            <li class="nav-item"><a href="../Persona_Estudiante/eje3/index.html</a></li>
+            <li class="nav-item"><a href="../Persona_Estudiante/eje4/index.html">EJERCICIO 4</a></li>
+            <li class="nav-item"><a href="../Persona_Estudiante/eje5/index.html</a></li>
           </ul>
         </div>
       `;
