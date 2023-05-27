@@ -115,6 +115,7 @@ margin: 0;
 padding: 0;
 display: flex;
 flex-wrap: wrap;
+flex-direction: row;
 width: 100%;
 }
 .nav-item a {
